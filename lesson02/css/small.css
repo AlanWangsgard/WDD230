@@ -1,0 +1,72 @@
+@media (max-width:32em) {
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .two {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .three {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}
+
+body {
+    background-color: #35444F;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 30px;
+}
+
+.description {
+    background-color: crimson;
+    margin: auto;
+    width: 535px;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.principle {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 15px;
+    text-align: center;
+}
+
+.grid-container img {
+    width: 400px;
+}
+
+.grid-container p {
+    max-width: 400px;
+    margin: auto;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.one {
+    background-color: aliceblue;
+}
+
+.two {
+    background-color: blueviolet;
+}
+
+.three {
+    background-color: crimson;
+}

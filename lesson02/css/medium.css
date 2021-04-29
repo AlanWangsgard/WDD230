@@ -1,0 +1,12 @@
+@media only screen and (min-width: 32em) and (max-width: 79em) {
+    .one {
+        grid-column: 1;
+    }
+    .two {
+        grid-column: 2;
+    }
+    .three {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
