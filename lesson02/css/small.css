@@ -69,6 +69,16 @@ hr {
     background-color: crimson;
 }
 
+footer {
+    background-color: crimson;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    padding: 5px;
+    max-width: 535px;
+    border-radius: 25px;
+}
+
 @media (max-width:32em) {
     .one {
         grid-column: 1;

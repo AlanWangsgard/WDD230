@@ -41,6 +41,18 @@
             <p class="explain">This is a good example of the rule of thirds, because the image is visually appealing, and has things positioned along the intersections of where the dividing lines would be.</p>
         </div>
     </div>
+    <footer>
+        <p class="copyright"> | Alan Wangsgard | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </p>
+        <p class="modified"></p>
+    </footer>
+    <script>
+        var modify = document.lastModified;
+        var year = new Date().getFullYear();
+        var copy = document.querySelector(".copyright").innerHTML;
+        document.querySelector(".modified").innerHTML = "Last Modified: " + modify;
+        document.querySelector(".copyright").innerHTML = "© " + year + copy;
+    </script>
 </body>
 
 </html>
