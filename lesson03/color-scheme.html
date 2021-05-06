@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather Or Not</title>
+    <link rel="stylesheet" href="css/plan-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+</head>
+
+<body>
+    <!-- Background color #7FC3F5 -->
+    <div class="intro">
+        <h1><img src="img/WeatherorNot.png" alt="weather picture"> Weather or Not</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="target-audience.html">Target Audience</a></li>
+            <li><a href="color-scheme.html">Color Scheme</a></li>
+            <li><a href="typography.html">Typography</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p class="copyright"> | Alan Wangsgard | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </p>
+        <p class="modified"></p>
+    </footer>
+    <script>
+        var modify = document.lastModified;
+        var year = new Date().getFullYear();
+        var copy = document.querySelector(".copyright").innerHTML;
+        document.querySelector(".modified").innerHTML = "Last Modified: " + modify;
+        document.querySelector(".copyright").innerHTML = "© " + year + copy;
+    </script>
+</body>
+
+</html>
