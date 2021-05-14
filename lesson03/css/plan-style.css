@@ -123,6 +123,10 @@ nav a:hover {
     background-color: gray;
 }
 
+.g-font {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 @media only screen and (min-width: 37.5em) {
     nav ul {
         display: flex;

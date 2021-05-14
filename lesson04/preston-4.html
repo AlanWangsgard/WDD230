@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <script src="js/menu.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,8 +69,19 @@
             <a><img src="images/twitter.png"></a>
             <a><img src="images/youtube.png"></a>
         </div>
-        <div class="footer-bar"></div>
+        <div class="footer-bar">
+            <p class="copyright"> | Alan Wangsgard | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
+            </p>
+            <p class="modified"></p>
+        </div>
     </footer>
 </body>
+<script>
+    var modify = document.lastModified;
+    var year = new Date().getFullYear();
+    var copy = document.querySelector(".copyright").innerHTML;
+    document.querySelector(".modified").innerHTML = "Last Modified: " + modify;
+    document.querySelector(".copyright").innerHTML = "© " + year + copy;
+</script>
 
 </html>

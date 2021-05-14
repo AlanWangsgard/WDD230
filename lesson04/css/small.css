@@ -1,6 +1,7 @@
 body {
     background-color: #57AFC1;
     margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 header {
@@ -81,7 +82,7 @@ main img {
     background-color: #ABC1C5;
     position: relative;
     width: 150px;
-    bottom: 150px;
+    bottom: 170px;
     left: 30px;
 }
 
@@ -129,7 +130,7 @@ main img {
 }
 
 footer {
-    background-color: slategray;
+    background-color: #ABC1C5;
     display: grid;
 }
 
@@ -153,11 +154,12 @@ footer {
 }
 
 .footer-bar {
-    background-color: black;
-    height: 15px;
+    background-color: slategray;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 2;
+    text-align: center;
+    padding: 5px;
 }
 
 .icon {
