@@ -14,7 +14,7 @@
     <meta name="description" content="">
 </head>
 
-<body>
+<body onload="date()">
     <header>
         <h1><img src="images/WeatherorNot.png" alt="website logo"> <span class="sitename">Weather Or Not</span><br><span class="sitemotto"> Rain or shine, We've got you covered</span></h1>
     </header>
@@ -73,15 +73,8 @@
         <div class="footer-bar">
             <p class="copyright"> | Alan Wangsgard | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
             </p>
-            <p class="modified"></p>
+            <p class="date"></p>
         </div>
-        <script>
-            var modify = document.lastModified;
-            var year = new Date().getFullYear();
-            var copy = document.querySelector(".copyright").innerHTML;
-            document.querySelector(".modified").innerHTML = "Last Modified: " + modify;
-            document.querySelector(".copyright").innerHTML = "© " + year + copy;
-        </script>
     </footer>
 </body>
 

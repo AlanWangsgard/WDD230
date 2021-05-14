@@ -132,6 +132,8 @@ main img {
 footer {
     background-color: #ABC1C5;
     display: grid;
+    max-width: 800px;
+    margin: auto;
 }
 
 .location {
