@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <script src="js/menu.js"></script>
+    <title>Weather Or Not</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -20,7 +21,7 @@
     <nav>
         <ul class="navigation">
             <li>
-                <a href="#" onclick="toggleMenu()"><img class="icon" src="images/menu.png"></a>
+                <a href="#" onclick="toggleMenu()"><img class="icon" src="images/menu.png" alt="menu.png"></a>
             </li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
@@ -65,23 +66,23 @@
             <p>Location</p>
             <p>Phone</p>
             <p>Email</p>
-            <a><img src="images/facebook.png"></a>
-            <a><img src="images/twitter.png"></a>
-            <a><img src="images/youtube.png"></a>
+            <a><img src="images/facebook.png" alt="facebook.png"></a>
+            <a><img src="images/twitter.png" alt="twitter.png"></a>
+            <a><img src="images/youtube.png" alt="youtube.png"></a>
         </div>
         <div class="footer-bar">
             <p class="copyright"> | Alan Wangsgard | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
             </p>
             <p class="modified"></p>
         </div>
+        <script>
+            var modify = document.lastModified;
+            var year = new Date().getFullYear();
+            var copy = document.querySelector(".copyright").innerHTML;
+            document.querySelector(".modified").innerHTML = "Last Modified: " + modify;
+            document.querySelector(".copyright").innerHTML = "© " + year + copy;
+        </script>
     </footer>
 </body>
-<script>
-    var modify = document.lastModified;
-    var year = new Date().getFullYear();
-    var copy = document.querySelector(".copyright").innerHTML;
-    document.querySelector(".modified").innerHTML = "Last Modified: " + modify;
-    document.querySelector(".copyright").innerHTML = "© " + year + copy;
-</script>
 
 </html>
