@@ -236,6 +236,11 @@ footer {
     padding: 10px;
 }
 
+.active {
+    background-color: darkslategray;
+    text-decoration: underline;
+}
+
 @media (max-width: 32em) {
     header h1 {
         margin-left: 20px;

@@ -1,6 +1,11 @@
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive")
-}
+};
+
+function show_active() {
+    var identity = document.querySelector("body").id;
+    document.getElementsByClassName(identity)[0].classList.toggle("active")
+};
 
 function date() {
     var d = new Date()
