@@ -1,0 +1,30 @@
+    @media (min-width: 480px) and (max-width: 650px) {
+        header h1 {
+            max-width: 300px;
+            margin: auto;
+        }
+        header img {
+            width: 64px;
+        }
+        .sitemotto {
+            left: 30px;
+        }
+        .navigation li {
+            display: none;
+        }
+        .navigation li:first-child {
+            display: block;
+        }
+        .responsive li {
+            display: block;
+        }
+        .icon {
+            width: 40px
+        }
+        .preston {
+            max-height: 400px;
+        }
+        .summary {
+            bottom: 170px;
+        }
+    }
