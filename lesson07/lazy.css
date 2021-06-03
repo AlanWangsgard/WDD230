@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(17, 136, 216);
+    text-align: center;
+}
+
+div {
+    display: grid;
+}
+
+.one {
+    grid-row: 1;
+}
+
+.two {
+    grid-row: 2;
+}
+
+.three {
+    grid-row: 3;
+}
+
+.four {
+    grid-row: 4;
+}
+
+.five {
+    grid-row: 5;
+}
+
+.six {
+    grid-row: 6;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
