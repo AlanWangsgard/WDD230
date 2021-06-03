@@ -1,0 +1,52 @@
+ @media (min-width: 800px) {
+     .preston {
+         max-height: 500px;
+     }
+     .gal-1 {
+         grid-row: 1;
+         grid-column: 1;
+     }
+     .gal-2 {
+         grid-row: 1;
+         grid-column: 2;
+     }
+     .gal-3 {
+         grid-row: 1;
+         grid-column: 3;
+     }
+     .gal-4 {
+         grid-row: 2;
+         grid-column: 1;
+     }
+     .gal-5 {
+         grid-row: 2;
+         grid-column: 2;
+     }
+     .gal-6 {
+         grid-row: 2;
+         grid-column: 3;
+     }
+     .gal-7 {
+         grid-row: 3;
+         grid-column: 1;
+     }
+     .gal-8 {
+         grid-row: 3;
+         grid-column: 2;
+     }
+     .gal-9 {
+         grid-row: 3;
+         grid-column: 3;
+     }
+     .gallery h3 {
+         font-size: 15px;
+         margin: 3px;
+     }
+     .gallery {
+         margin-top: 20px;
+         margin-bottom: 20px;
+     }
+     .galpic img:hover {
+         box-shadow: 5px 10px 10px black;
+     }
+ }
