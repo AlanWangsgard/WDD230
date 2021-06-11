@@ -1,0 +1,476 @@
+body {
+    background-color: #57AFC1;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+    background-color: #ABC1C5;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+header h1 {
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 0px;
+}
+
+.sitename {
+    position: relative;
+    bottom: 20px;
+}
+
+.sitemotto {
+    position: relative;
+    left: 80px;
+    bottom: 20px;
+    font-size: 15px;
+}
+
+nav {
+    background-color: slategray;
+    margin-top: 0px;
+}
+
+nav ul li:first-child {
+    display: none;
+}
+
+nav ul {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-left: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: darkslategray;
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+main h2 {
+    margin-top: 0;
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+
+/* main img {
+    width: 95%;
+    max-height: 200px;
+} */
+
+.summary {
+    background-color: #ABC1C5;
+    position: relative;
+    width: 150px;
+    bottom: 200px;
+    left: 30px;
+    opacity: 75%;
+}
+
+.summary p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.summary h3 {
+    margin: 5px;
+}
+
+.preston {
+    max-height: 400px;
+}
+
+.forecast {
+    display: grid;
+}
+
+.forecast img {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+}
+
+.day {
+    display: grid;
+    text-align: center;
+}
+
+.weekday {
+    grid-row: 1;
+    background-color: slategray;
+    margin: 0;
+}
+
+.day p {
+    margin: 0;
+}
+
+.day img {
+    grid-row: 2;
+    margin: auto;
+}
+
+.mon {
+    grid-column: 1;
+    background-color: #ABC1C5;
+    border: 1px solid black;
+}
+
+.tue {
+    grid-column: 2;
+    background-color: #ABC1C5;
+    border: 1px solid black;
+}
+
+.wen {
+    grid-column: 3;
+    background-color: #ABC1C5;
+    border: 1px solid black;
+}
+
+.thu {
+    grid-column: 4;
+    background-color: #ABC1C5;
+    border: 1px solid black;
+}
+
+.fri {
+    grid-column: 5;
+    background-color: #ABC1C5;
+    border: 1px solid black;
+}
+
+.header {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.article {
+    background-color: #ABC1C5;
+    text-align: justify;
+}
+
+.article h3 {
+    padding-top: 20px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.article p {
+    margin-left: 30px;
+    padding-bottom: 20px;
+    margin-right: 30px;
+}
+
+.article-img {
+    max-width: 200px;
+    max-height: 150px;
+    float: right;
+    margin: 10px;
+}
+
+footer {
+    background-color: #ABC1C5;
+    display: grid;
+    max-width: 800px;
+    margin: auto;
+}
+
+.location {
+    grid-column: 1;
+    max-width: 350px;
+    max-height: 150px;
+    margin: auto;
+}
+
+.contact {
+    grid-column: 2;
+}
+
+.contact p {
+    margin: 0;
+}
+
+.contact h3 {
+    margin-top: 5px;
+}
+
+.footer-bar {
+    background-color: slategray;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    text-align: center;
+    padding: 5px;
+}
+
+.icon {
+    width: 30px;
+    position: relative;
+    top: 7px
+}
+
+.banner {
+    text-align: center;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.active {
+    background-color: darkslategray;
+    text-decoration: underline;
+}
+
+.gallery {
+    display: grid;
+    text-align: center;
+}
+
+.gallery img {
+    max-width: 250px;
+}
+
+.gal-1,
+.gal-2,
+.gal-3,
+.gal-4,
+.gal-5,
+.gal-6,
+.gal-7,
+.gal-8,
+.gal-9 {
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.gal-1 {
+    grid-row: 1;
+}
+
+.gal-2 {
+    grid-row: 2;
+}
+
+.gal-3 {
+    grid-row: 3;
+}
+
+.gal-4 {
+    grid-row: 4;
+}
+
+.gal-5 {
+    grid-row: 5;
+}
+
+.gal-6 {
+    grid-row: 6;
+}
+
+.gal-7 {
+    grid-row: 7;
+}
+
+.gal-8 {
+    grid-row: 8;
+}
+
+.gal-9 {
+    grid-row: 9;
+}
+
+.gallery img[data-src] {
+    filter: blur(0.2em);
+}
+
+.gallery img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+.visit {
+    text-align: center;
+    background-color: darkslategray;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Storm center page */
+
+.personal {
+    border: 3px solid black;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    margin-top: 20px;
+    background-color: slategray;
+}
+
+.description,
+input,
+textarea,
+select {
+    margin-left: 50px;
+}
+
+input,
+select,
+textarea {
+    border-radius: 5px;
+    width: 200px;
+}
+
+#danger {
+    width: auto;
+}
+
+.storm-info {
+    border: 3px solid black;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: slategray;
+}
+
+.top {
+    text-align: center;
+}
+
+.button {
+    background-color: green;
+    display: block;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.thankyou h2 {
+    text-align: center;
+}
+
+.thankyou img {
+    width: 100%;
+}
+
+@media (max-width: 32em) {
+    header h1 {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    header img {
+        width: 40px
+    }
+    .sitemotto {
+        left: 35px;
+        font-size: 12px;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .responsive li {
+        display: block;
+    }
+    .article-img {
+        width: 100px;
+    }
+    .location {
+        width: 150px;
+        margin: 5px;
+    }
+    .contact img {
+        width: 40px;
+    }
+    .contact {
+        margin-left: 20px;
+    }
+    .summary {
+        font-size: 13px;
+        bottom: 120px;
+        left: 20px;
+    }
+    .preston {
+        max-height: 250px;
+    }
+    .article {
+        display: grid;
+        margin-top: 10px;
+    }
+    .article-img {
+        grid-row: 1;
+        width: 90%;
+        padding-top: 20px;
+        margin: auto;
+    }
+    .location {
+        width: 90%;
+        margin: auto;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-bottom: 10px;
+    }
+    .contact {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-bottom: 10px;
+    }
+    .footer-bar {
+        grid-row: 3;
+    }
+    .contact img {
+        display: none;
+    }
+    .forecast {
+        display: none;
+    }
+    .header {
+        display: none;
+    }
+    .location {
+        display: none;
+    }
+    .gallery h3 {
+        display: none;
+    }
+    .galpic {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .storm-info img,
+    .personal img {
+        display: none;
+    }
+}
