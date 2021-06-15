@@ -1,0 +1,72 @@
+footer,
+header {
+    text-align: center;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width: 800px) {
+    section {
+        background-color: crimson;
+        width: 24%;
+        float: left;
+        text-align: center;
+        margin: 4px;
+        border: 1px solid black;
+        font-size: 17px;
+        height: 450px;
+    }
+    section h2 {
+        color: rgb(65, 63, 63);
+    }
+    section p {
+        font-size: 17px;
+        color: white;
+    }
+    section img {
+        max-width: 90%;
+        max-height: 250px;
+    }
+    footer {
+        clear: both;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 799px) {
+    section {
+        background-color: crimson;
+        width: 32%;
+        float: left;
+        text-align: center;
+        margin: 4px;
+        border: 1px solid black;
+        height: 350px;
+        font-size: 14px;
+    }
+    section img {
+        max-width: 90%;
+        max-height: 200px;
+    }
+    footer {
+        clear: both;
+    }
+    section p {
+        font-size: 13px;
+        color: white;
+    }
+}
+
+@media (max-width: 399px) {
+    section {
+        background-color: crimson;
+        width: 100%;
+        text-align: center;
+        margin: 4px;
+        border: 1px solid black;
+    }
+    section img {
+        max-width: 90%;
+    }
+}
