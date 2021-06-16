@@ -9,7 +9,7 @@ body {
 
 @media (min-width: 800px) {
     section {
-        background-color: crimson;
+        background-color: rgb(154, 154, 207);
         width: 24%;
         float: left;
         text-align: center;
@@ -19,11 +19,10 @@ body {
         height: 450px;
     }
     section h2 {
-        color: rgb(65, 63, 63);
+        color: darkblue;
     }
     section p {
         font-size: 17px;
-        color: white;
     }
     section img {
         max-width: 90%;
@@ -36,8 +35,8 @@ body {
 
 @media (min-width: 400px) and (max-width: 799px) {
     section {
-        background-color: crimson;
-        width: 32%;
+        background-color: rgb(154, 154, 207);
+        width: 31%;
         float: left;
         text-align: center;
         margin: 4px;
@@ -47,20 +46,24 @@ body {
     }
     section img {
         max-width: 90%;
-        max-height: 200px;
+        max-height: 190px;
     }
     footer {
         clear: both;
     }
     section p {
         font-size: 13px;
-        color: white;
+        height: 20px;
+    }
+    section h2 {
+        color: darkblue;
+        height: 35px;
     }
 }
 
 @media (max-width: 399px) {
     section {
-        background-color: crimson;
+        background-color: rgb(154, 154, 207);
         width: 100%;
         text-align: center;
         margin: 4px;
@@ -68,5 +71,8 @@ body {
     }
     section img {
         max-width: 90%;
+    }
+    section h2 {
+        color: darkblue;
     }
 }
