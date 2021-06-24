@@ -87,6 +87,7 @@ main h2 {
     bottom: 200px;
     left: 30px;
     opacity: 75%;
+    border-radius: 10px;
 }
 
 .summary p {

@@ -1,4 +1,4 @@
-            @media (min-width: 480px) and (max-width: 650px) {
+            @media (min-width: 480px) and (max-width: 799px) {
                 header h1 {
                     max-width: 300px;
                     margin: auto;
@@ -26,6 +26,7 @@
                 }
                 .summary {
                     bottom: 170px;
+                    left: 100px;
                 }
                 .gallery img {
                     max-width: 240px;
