@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <title>Weather Or Not</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+</head>
+
+<body id="storm-center" onload="date(), show_active()">
+    <div class=" visit ">
+    </div>
+    <header>
+        <h1><img src="images/WeatherorNot.png " alt="website logo "> <span class="sitename ">Weather Or
+                Not</span><br><span class="sitemotto "> Rain or shine, We've got you covered</span></h1>
+    </header>
+    <nav>
+        <ul class="navigation ">
+            <li>
+                <a href="# " onclick="toggleMenu() "><img class="icon " src="images/menu.png " alt="menu.png "></a>
+            </li>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="preston "><a href="preston-7.html ">Preston</a></li>
+            <li><a href="# ">Soda Springs</a></li>
+            <li><a href="# ">Fish Haven</a></li>
+            <li class="storm-center"><a href="storm-center.html">Storm Center</a></li>
+            <li class="gallery_page"><a href="gallery-7.html ">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="storm-center">
+        <form method="GET" action="thanks.html">
+            <div class="personal">
+                <h2 class="top user_info">Your information</h2>
+                <div class="one">
+                    <label>
+                <span class="description">Full Name</span>
+                <br>
+                <input type="text" name="fullname" required="required" pattern="[A-Za-z\w\s]{5,}">
+                </label>
+                    <br>
+                    <label for="email">
+                <span class="description">Email</span>
+                <br>
+                <input type="email" id="email" name="email" placeholder="eaxample@mail.com">
+                </label>
+                    <br>
+                    <label>
+                <span class="description">Phone Number</span>
+                <br>
+                <input type="tel" name="phone number" required="required">
+                </label>
+                    <br>
+                    <label>
+                <span class="description">Zip Code</span>
+                <br>
+                <input type="number" name="zip code" required="required">
+                </label>
+                </div>
+                <picture class="two">
+                    <img src="images/light.jpeg" alt="light.jpg">
+                </picture>
+            </div>
+            <div class="storm-info user_info">
+                <h2 class="top user_info">Storm Info</h2>
+                <div class="one">
+                    <label>
+                <span class="description">Storm Date</span>
+                <br>
+                <input type="date" name="storm date">
+                </label>
+                    <br>
+                    <label>
+                    <span class="description">Storm Type</span>
+                <br>
+                <input list="storms" name="storm type">
+                <datalist id="storms">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                </label>
+                    <br>
+                    <label for="slide">
+                    <span class="description">Storm Severety</span>
+                    <br>
+                <input id="slide" name="storm severity" type="range" min="0" max="10" onchange="update_severity()">
+                <span class="severity">5</span>
+                </label>
+                    <br>
+                    <label>
+                    <span class="description">Storm Region</span>
+                    <br>
+                <select name="storm region">
+                <option value="Select Region" disabled>Select Region</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+                </select>
+                </label>
+                    <br>
+                    <label>
+                    <span class="description">Are you in danger?</span>
+                    <br>
+                <input type="radio" class="danger" name="in-danger" value="yes">
+                Yes</label>
+                    <br>
+                    <label>
+                <input type="radio" class="danger" name="in-danger" value="no">
+                No</label>
+                    <br>
+                    <label>
+                <input type="radio" class="danger" name="in-danger" value="maybe">
+                Maybe</label>
+                    <br>
+                    <label>
+                <span class="description">Additional info</span>
+                <br>
+                <textarea name="additional info"></textarea>
+                </label>
+                    <br>
+                    <label>
+                <br>
+                <input type="submit" class="button" value="Report Storm">
+                </label>
+                </div>
+                <picture class="two">
+                    <img src="images/tree.jpeg" alt="tree">
+                </picture>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <img class="location " src="images/preston.png " alt="location map ">
+        <div class="contact ">
+            <h3>Contact Information</h3>
+            <p>🚩 Location</p>
+            <p>☎ 777-543-9876</p>
+            <p>📧 WeatherorNot@gmail.com</p>
+            <a><img src="images/facebook.png " alt="facebook.png "></a>
+            <a><img src="images/twitter.png " alt="twitter.png "></a>
+            <a><img src="images/youtube.png " alt="youtube.png "></a>
+        </div>
+        <div class="footer-bar ">
+            <p class="copyright "> | Alan Wangsgard | Idaho | <a href="https://www.byui.edu/online ">BYU-Idaho Online
+                    Learning</a>
+            </p>
+            <p class="date "></p>
+        </div>
+    </footer>
+    <script src="js/image-loading.js "></script>
+    <script src="js/date-check.js "></script>
+    <script src="js/menu.js "></script>
+    <script src="js/severity.js"></script>
+</body>
