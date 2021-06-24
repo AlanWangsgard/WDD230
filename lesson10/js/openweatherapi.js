@@ -17,6 +17,8 @@ fetch(fiveURL)
     .then((jsObject) => {
         console.log(jsObject)
         let i = 1
+        var d = new Date();
+        var week_day = d.getDay();
         for (let time in jsObject.list) {
             if (jsObject.list[time].dt_txt.includes("18:00:00")) {
                 let place = "fore_" + String(i);
@@ -24,8 +26,16 @@ fetch(fiveURL)
                 document.getElementById(place).textContent = Math.round(jsObject.list[time].main.temp) + "℉";
                 const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[time].weather[0].icon + '.png'; // note the concatenation
                 const desc = jsObject.list[time].weather[0].description; // note how we reference the weather array
-                document.getElementById(im_place).setAttribute("src", imagesrc)
-                document.getElementById(im_place).setAttribute("alt", desc)
+                document.getElementById(im_place).setAttribute("src", imagesrc);
+                document.getElementById(im_place).setAttribute("alt", desc);
+                var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                if (week_day == 6) {
+                    week_day = -1
+                }
+                var current_day = day[week_day += 1];
+                var wday = ".weekday_" + i;
+                document.querySelector(wday).textContent = current_day
+
                 i++;
             }
         }
