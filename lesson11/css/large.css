@@ -1,0 +1,198 @@
+     @media (min-width: 800px) {
+         .preston {
+             max-height: 500px;
+         }
+         .summary {
+             bottom: 350px;
+         }
+         .gal-1 {
+             grid-row: 1;
+             grid-column: 1;
+         }
+         .gal-2 {
+             grid-row: 1;
+             grid-column: 2;
+         }
+         .gal-3 {
+             grid-row: 1;
+             grid-column: 3;
+         }
+         .gal-4 {
+             grid-row: 2;
+             grid-column: 1;
+         }
+         .gal-5 {
+             grid-row: 2;
+             grid-column: 2;
+         }
+         .gal-6 {
+             grid-row: 2;
+             grid-column: 3;
+         }
+         .gal-7 {
+             grid-row: 3;
+             grid-column: 1;
+         }
+         .gal-8 {
+             grid-row: 3;
+             grid-column: 2;
+         }
+         .gal-9 {
+             grid-row: 3;
+             grid-column: 3;
+         }
+         .gallery h3 {
+             font-size: 15px;
+             margin: 3px;
+         }
+         .gallery {
+             margin-top: 20px;
+             margin-bottom: 20px;
+         }
+         .galpic img:hover {
+             box-shadow: 5px 10px 10px black;
+         }
+         .gal-1,
+         .gal-2,
+         .gal-3,
+         .gal-4,
+         .gal-5,
+         .gal-6,
+         .gal-7,
+         .gal-8,
+         .gal-9 {
+             background-color: slategray;
+         }
+         .description,
+         input,
+         textarea,
+         select {
+             margin-left: 200px;
+         }
+         .personal {
+             display: grid;
+         }
+         .one {
+             grid-column: 1;
+             grid-row: 2;
+         }
+         .two {
+             grid-column: 2;
+             grid-row: 2;
+         }
+         .personal img {
+             width: 300px;
+             box-shadow: 5px 5px 5px black;
+         }
+         .storm-info img {
+             box-shadow: 5px 5px 5px black;
+         }
+         .user_info {
+             grid-column-start: 1;
+             grid-column-end: 3;
+         }
+         .storm-info {
+             display: grid;
+         }
+         .towns {
+             display: grid;
+             margin-bottom: 20px;
+         }
+         .towns img {
+             height: 166px;
+         }
+         .preston-home {
+             background-color: slategray;
+             grid-column: 1;
+             grid-row: 1;
+             width: 250px;
+             margin-left: auto;
+             margin-right: auto;
+             box-shadow: 5px 5px 5px black;
+         }
+         .soda-springs-home {
+             background-color: slategray;
+             grid-column: 2;
+             grid-row: 1;
+             width: 250px;
+             margin-left: auto;
+             margin-right: auto;
+             box-shadow: 5px 5px 5px black;
+         }
+         .fish-haven-home {
+             background-color: slategray;
+             grid-column: 3;
+             grid-row: 1;
+             margin-left: auto;
+             margin-right: auto;
+             width: 250px;
+             box-shadow: 5px 5px 5px black;
+         }
+         .towns h3 {
+             height: 40px;
+         }
+         /* home article */
+         .outdoor {
+             background-color: slategray;
+             box-shadow: 5px 5px 5px black;
+         }
+         .intro {
+             text-align: justify;
+             margin-left: 10px;
+             margin-right: 10px;
+         }
+         .outdoor img {
+             width: 400px;
+         }
+         .camping,
+         .hiking {
+             display: grid;
+             margin-bottom: 15px;
+             padding-bottom: 10px;
+         }
+         .camping img {
+             grid-column: 1;
+             width: 350px;
+             margin: auto;
+         }
+         .campgrounds {
+             grid-column: 2;
+             width: 400px;
+             text-align: justify;
+         }
+         .hiking img {
+             grid-column: 2;
+             width: 350px;
+             margin: auto;
+         }
+         .attractions {
+             grid-column: 1;
+             grid-row: 1;
+             width: 400px;
+             text-align: justify;
+         }
+         .attractions p,
+         .attractions ul,
+         .campgrounds p,
+         .campgrounds ul {
+             margin-left: 100px;
+         }
+         .hero-image {
+             box-shadow: 5px 5px 5px black;
+             margin-top: 10px;
+             margin-bottom: 10px;
+         }
+         .town_events {
+             background-color: #ABC1C5;
+             text-align: center;
+             max-width: 800px;
+             margin: auto;
+             border-radius: 20px;
+             border: 1px solid black;
+             margin-bottom: 20px;
+         }
+         .town_events hr {
+             background-color: crimson;
+             height: 10px;
+         }
+     }

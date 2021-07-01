@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <script src="js/windchill.js"></script>
+    <title>Weather Or Not</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+</head>
+
+<body id="home" onload="date(), show_active()">
+    <header>
+        <h1><img src="images/WeatherorNot.png" alt="website logo"> <span class="sitename">Weather Or Not</span><br><span class="sitemotto"> Rain or shine, We've got you covered</span></h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li>
+                <a href="#" onclick="toggleMenu()"><img class="icon" src="images/menu.png" alt="menu.png"></a>
+            </li>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="preston"><a href="preston.html">Preston</a></li>
+            <li class="soda-springs"><a href="soda-springs.html">Soda Springs</a></li>
+            <li class="fish-haven"><a href="fish-haven.html">Fish Haven</a></li>
+            <li class="storm-center"><a href="storm-center.html">Storm Center</a></li>
+            <li class="gallery_page"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="home-page">
+        <img class="hero-image" src="images/mountains.jpg" alt="mountains">
+        <article class="outdoor">
+            <h2>Welcome To Weather or not!</h2>
+            <p class="intro">We have all the infromation you need to plan and enjoy your daily life. If your looking for events to attend, or you just want to plan a hiking or camping trip, we are here to provide you the information you need to stay safe and happy!</p>
+            <div>
+                <div class="camping">
+                    <img src="images/rsz_camping.jpg" alt="hiking">
+                    <div class="campgrounds">
+                        <p>Great camping spots:</p>
+                        <ul>
+                            <li>Bear Lake Campground</li>
+                            <li>Lava Campground</li>
+                            <li>Brigham Yound Lodge and Rv Park</li>
+                            <li>Cold Sorings Campground</li>
+                            <li>Willow Flat Campground</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hiking">
+                    <img src="images/hiking.jpg" alt="hiking">
+                    <div class="attractions">
+                        <p>Great Trails/attractions:</p>
+                        <ul>
+                            <li>Lava Hot Springs</li>
+                            <li>Paris Peak</li>
+                            <li>Sherman Peak</li>
+                            <li>Oxford Peak</li>
+                            <li>Sedgwick Peak</li>
+                            <li>Geyser Park</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="towns">
+            <div class="fish-haven-home">
+
+            </div>
+            <div class="preston-home">
+
+            </div>
+            <div class="soda-springs-home">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img class="location" src="images/preston.png" alt="location map">
+        <div class="contact">
+            <h3>Contact Information</h3>
+            <p>🚩 Location</p>
+            <p>☎ 777-543-9876</p>
+            <p>📧 WeatherorNot@gmail.com</p>
+            <a><img src="images/facebook.png" alt="facebook.png"></a>
+            <a><img src="images/twitter.png" alt="twitter.png"></a>
+            <a><img src="images/youtube.png" alt="youtube.png"></a>
+        </div>
+        <div class="footer-bar">
+            <p class="copyright"> | Alan Wangsgard | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho Online
+                    Learning</a>
+            </p>
+            <p class="date"></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/home.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Noto Sans JP"
+                ]
+            }
+        });
+    </script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

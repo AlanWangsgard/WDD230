@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <title>Weather Or Not</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+</head>
+
+<body id="gallery_page" onload="date(), show_active()">
+    <div class=" visit ">
+    </div>
+    <header>
+        <h1><img src="images/WeatherorNot.png " alt="website logo "> <span class="sitename ">Weather Or Not</span><br><span class="sitemotto "> Rain or shine, We've got you covered</span></h1>
+    </header>
+    <nav>
+        <ul class="navigation ">
+            <li>
+                <a href="# " onclick="toggleMenu() "><img class="icon " src="images/menu.png " alt="menu.png "></a>
+            </li>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="preston"><a href="preston.html">Preston</a></li>
+            <li class="soda-springs"><a href="soda-springs.html">Soda Springs</a></li>
+            <li class="fish-haven"><a href="fish-haven.html">Fish Haven</a></li>
+            <li class="storm-center"><a href="storm-center.html">Storm Center</a></li>
+            <li class="gallery_page"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="gallery ">
+        <div class="gal-1 galpic ">
+            <picture>
+                <img src="images/placeholder.jpg " data-src="images/rsz_fog.png " alt="weather image ">
+            </picture>
+            <h3>A foggy day</h3>
+        </div>
+        <div class="gal-2 galpic ">
+            <picture>
+                <img src="images/placeholder.jpg " data-src="images/rsz_overcast.png " alt="weather image ">
+            </picture>
+            <h3>Overcast</h3>
+        </div>
+        <div class="gal-3 galpic ">
+            <picture>
+                <img src="images/placeholder.jpg " data-src="images/rsz_rain2.png " alt="weather image ">
+            </picture>
+            <h3>Rainy day</h3>
+        </div>
+        <div class="gal-4 galpic ">
+            <picture>
+                <img src="images/placeholder.jpg " data-src="images/rsz_snow.png " alt="weather image ">
+            </picture>
+            <h3>Snow!</h3>
+        </div>
+        <div class="gal-5 galpic ">
+            <picture>
+                <img src="images/placeholder.jpg " data-src="images/rsz_sunny.png " alt="weather image ">
+            </picture>
+            <h3>Sunny Day!</h3>
+        </div>
+        <div class="gal-6 galpic ">
+            <picture>
+                <img src="images/placeholder.jpg " data-src="images/rsz_wind.png " alt="weather image ">
+            </picture>
+            <h3>Windy</h3>
+        </div>
+        <div class="gal-7 galpic ">
+            <picture>
+                <img src="images/placeholder.jpg " data-src="images/lightning.png " alt="weather image ">
+            </picture>
+            <h3>Lightning!</h3>
+        </div>
+        <div class="gal-8 galpic ">
+            <picture>
+                <img src="images/placeholder.jpg " data-src="images/rainy.png " alt="weather image ">
+            </picture>
+            <h3>Rain!</h3>
+        </div>
+        <div class="gal-9 galpic ">
+            <picture>
+                <img src="images/placeholder.jpg " data-src="images/hail.png " alt="weather image ">
+            </picture>
+            <h3>Hail</h3>
+        </div>
+    </main>
+    <footer>
+        <img class="location " src="images/preston.png " alt="location map ">
+        <div class="contact ">
+            <h3>Contact Information</h3>
+            <p>🚩 Location</p>
+            <p>☎ 777-543-9876</p>
+            <p>📧 WeatherorNot@gmail.com</p>
+            <a><img src="images/facebook.png " alt="facebook.png "></a>
+            <a><img src="images/twitter.png " alt="twitter.png "></a>
+            <a><img src="images/youtube.png " alt="youtube.png "></a>
+        </div>
+        <div class="footer-bar ">
+            <p class="copyright "> | Alan Wangsgard | Idaho | <a href="https://www.byui.edu/online ">BYU-Idaho Online
+                    Learning</a>
+            </p>
+            <p class="date "></p>
+        </div>
+    </footer>
+    <script src="js/image-loading.js "></script>
+    <script src="js/date-check.js "></script>
+    <script src="js/menu.js"></script>
+</body>
