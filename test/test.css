@@ -1,0 +1,41 @@
+body {
+    background-color: lightgray;
+}
+
+.one {
+    background-color: #F7FFF7;
+}
+
+.two {
+    background-color: #343434;
+}
+
+.three {
+    background-color: #2F3061;
+}
+
+.four {
+    background-color: #FFE66D;
+}
+
+.five {
+    background-color: #6CA6C1;
+}
+
+table td {
+    border: 1px solid black;
+    border-spacing: 0px;
+}
+
+td {
+    padding: 10px;
+    width: 100px;
+}
+
+.uno {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.dos {
+    font-family: 'Merriweather', serif;
+}

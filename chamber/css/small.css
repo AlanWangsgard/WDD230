@@ -1,0 +1,180 @@
+body {
+    background-color: #343434;
+    width: 800px;
+    margin: auto;
+}
+
+header {
+    background-color: #2f3061;
+    text-align: center;
+    height: 100px;
+    margin: 0px;
+}
+
+nav {
+    background-color: gray;
+    text-align: center;
+    margin: 0px;
+}
+
+nav ul {
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+}
+
+nav li:hover {
+    background-color: #6ca6c1;
+}
+
+nav a {
+    color: #ffe66d;
+    text-decoration: none;
+}
+
+.local {
+    display: grid;
+    margin: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.local img {
+    width: 200px;
+}
+
+main {
+    background-color: #2f3061;
+}
+
+footer {
+    background-color: gray;
+}
+
+.info {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px;
+    grid-template-columns: 50%;
+}
+
+.weather {
+    grid-column: 2;
+    grid-row: 1;
+    border: 2px black solid;
+}
+
+.events {
+    grid-column: 1;
+    grid-row: 1;
+    border: 2px black solid;
+}
+
+.advr1 {
+    text-align: center;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    border: 2px black solid;
+}
+
+.advr2 {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    border: 2px black solid;
+    text-align: center;
+}
+
+.advr3 {
+    display: grid;
+    grid-row: 1;
+    grid-column: 3;
+    border: 2px black solid;
+    text-align: center;
+}
+
+.advr4 {
+    display: grid;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 2px black solid;
+    text-align: center;
+}
+
+.com-name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.com-img {
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
+}
+
+.com-info {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.com-name2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.com-img2 {
+    grid-column: 1;
+    grid-row: 1/ span 2;
+    margin: 10px;
+}
+
+.com-info2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+article {
+    margin: 10px;
+    border: 2px black solid;
+}
+
+article img {
+    float: right;
+    margin: 20px;
+}
+
+article p {
+    margin: 10px;
+    text-align: justify;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 50%;
+    padding: 10px;
+}
+
+footer ul li {
+    list-style-type: none
+}
+
+.contact {
+    grid-column: 1;
+    margin-left: 200px;
+}
+
+.social {
+    grid-column: 2;
+}
