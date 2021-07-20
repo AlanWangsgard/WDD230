@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Home | Chamber of Commerce</title>
@@ -26,21 +26,121 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
+    <main>
+        <img class="hero" src="images/river.jpeg" alt="river">
+        <form action="index.html">
+            <div class="form">
+                <div class="f1">
+                    <div class="personal-label">
+                        <p>First Name</p>
+                        <p>Last Name</p>
+                        <p>Title</p>
+                        <p>Email</p>
+                        <p>Phone Number</p>
+                    </div>
+                    <div class="personal">
+                        <label>
+                    <input type="firstname" name="firstname" required>
+                    </label>
+                        <br>
+                        <label>
+                    <input type="lastname" name="lastname" required>
+                    </label>
+                        <br>
+                        <label>
+                    <input type="text" name="title">
+                    </label>
+                        <br>
+                        <label>
+                    <input type="email" name="email" required>
+                    </label>
+                        <br>
+                        <label>
+                    <input type="number" name="phonenumber">
+                    </label>
+                        <br>
+                    </div>
+                </div>
+                <div class="f2">
+                    <div class="company-label">
+                        <p>Business Name</p>
+                        <p>Business Adress</p>
+                        <p>Business Website</p>
+                        <p>Business Description</p>
+                    </div>
+                    <div class="company">
+                        <label>
+                    <input type="text" name="business name" required>
+                    </label>
+                        <br>
+                        <label>
+                    <input type="text" name="buisiness adress">
+                    </label>
+                        <br>
+                        <label>
+                    <input type="text" name="business website">
+                    </label>
+                        <br>
+                        <label>
+                    <input type="text" name="business description">
+                    </label>
+                        <br>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div class="tiers">
+                        <p>Gold Tier: Directory listing, Buiseness training, social media posts, 6 advertisements</p>
+                        <p>Silver Tier: Directory listing, social media posts, 4 advertisements</p>
+                        <p>Bronze Tier: Directory listing 2 advertisements</p>
+                        <p>Non-Profit Tier: Directory listing, 1 advertisement</p>
+                    </div>
+                    <div class="level">
+                        <label>
+                Non-profit $100
+            <input type="radio" name="fees">
+                        </label>
+                        <br>
+                        <label>
+                Bronze $200
+                <input type="radio" name="fees">
+                        </label>
+                        <br>
+                        <label>
+                Silver $400
+                <input type="radio" name="fees">
+                        </label>
+                        <br>
+                        <label>
+                Gold $1000
+                <input type="radio" name="fees">
+                    </label>
+                    </div>
+                    <div class="submit">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
     <footer>
-        <div class="contact">
-            <ul>
-                <li>888-888-8888</li>
-                <li>cow@gmail.com</li>
-                <li>555 s taco ST</li>
-            </ul>
+        <div class="foot-grid">
+            <div class="contact">
+                <ul>
+                    <li>☎ 543-335-7761</li>
+                    <li>✉ Ammon.chamber@gmail.com</li>
+                    <li>📍 435 S Forest ST</li>
+                </ul>
+            </div>
+            <div class="social">
+                <a><img src="images/facebook.png" alt="facebook"></a>
+                <a><img src="images/twitter.png" alt="facebook"></a>
+                <a><img src="images/youtube.png" alt="facebook"></a>
+            </div>
         </div>
-        <div class="social">
-            <a><img src="images/facebook.png" alt="facebook"></a>
-            <a><img src="images/twitter.png" alt="facebook"></a>
-            <a><img src="images/youtube.png" alt="facebook"></a>
+        <div class="attribution">
+            <p>Weather Info From:<a href="https://openweathermap.org/api">OpenWeatherApi</a></p>
         </div>
     </footer>
-    </main>
 </body>
 
 </html>
