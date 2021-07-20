@@ -158,7 +158,8 @@ footer {
 .com-info {
     grid-column: 1;
     grid-row: 3;
-    height: 75px;
+    height: 100px;
+    margin: 10px;
 }
 
 .call {
