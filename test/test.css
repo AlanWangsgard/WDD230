@@ -22,6 +22,14 @@ body {
     background-color: #6CA6C1;
 }
 
+.six {
+    background-color: gray;
+}
+
+.seven {
+    background-color: crimson;
+}
+
 table td {
     border: 1px solid black;
     border-spacing: 0px;

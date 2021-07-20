@@ -192,4 +192,13 @@
         border-radius: 20px;
         border: 1px solid black;
     }
+    .submit button {
+        width: 200px;
+        background-color: crimson;
+        color: #F7FFF7;
+        border-radius: 20px;
+        font-size: 25px;
+        margin-top: 45px;
+        margin-right: 110px;
+    }
 }
