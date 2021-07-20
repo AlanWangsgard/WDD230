@@ -1,494 +1,220 @@
-body {
-    background-color: #343434;
-    width: 800px;
-    margin: auto;
-    padding: 20px;
-    font-family: 'Merriweather', serif;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-header {
-    background-color: #2f3061;
-    text-align: center;
-    height: 100px;
-    margin: 0px;
-}
-
-nav {
-    background-color: gray;
-    text-align: center;
-    margin: 0px;
-}
-
-nav ul {
-    margin: 0px;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 10px;
-    margin: 0;
-    font-size: 20px;
-}
-
-nav li:hover {
-    background-color: #6ca6c1;
-}
-
-nav a {
-    color: #ffe66d;
-    text-decoration: none;
-}
-
-.local {
-    display: grid;
-    margin: 10px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-}
-
-main {
-    background-color: #2f3061;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.hero {
-    width: 90%;
-    box-shadow: 3px 3px 3px black;
-    border-radius: 20px;
-}
-
-footer {
-    background-color: gray;
-}
-
-.info {
-    display: grid;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    margin: 10px;
-    grid-template-columns: 50%;
-}
-
-.weather {
-    grid-column: 2;
-    grid-row: 1;
-    border: 2px black solid;
-    border-radius: 20px;
-}
-
-.events {
-    grid-column: 1;
-    grid-row: 1;
-    border: 2px black solid;
-    background-color: gray;
-    border-radius: 20px;
-    text-align: justify;
-}
-
-.events ul {
-    list-style-type: none;
-    margin-left: 20px;
-    margin-top: 40px;
-}
-
-.events li {
-    margin: 10px;
-}
-
-.events p {
-    margin-left: 20px;
-}
-
-.advr1 {
-    text-align: center;
-    display: grid;
-    grid-column: 1;
-    grid-row: 1;
-    border: 2px black solid;
-    background-color: gray;
-    border-radius: 20px;
-}
-
-.advr2 {
-    display: grid;
-    grid-row: 1;
-    grid-column: 2;
-    border: 2px black solid;
-    text-align: center;
-    background-color: gray;
-    border-radius: 20px;
-}
-
-.advr3 {
-    display: grid;
-    grid-row: 1;
-    grid-column: 3;
-    border: 2px black solid;
-    background-color: gray;
-    text-align: center;
-    border-radius: 20px;
-}
-
-.com-name {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 1;
-    text-align: center;
-    height: 20px;
-}
-
-.com-img {
-    grid-column: 1;
-    grid-row: 2;
-    margin: auto;
-    height: 120px;
-    width: 200px;
-    box-shadow: 3px 3px 3px black;
-    border-radius: 20px;
-}
-
-.com-info {
-    grid-column: 1;
-    grid-row: 3;
-    height: 100px;
-    margin: 10px;
-}
-
-.call {
-    background-color: gray;
-    border: 2px black solid;
-    border-radius: 20px;
-    margin: 10px;
-}
-
-article {
-    margin: 10px;
-    border: 2px black solid;
-    background-color: gray;
-    border-radius: 20px;
-}
-
-article img {
-    float: right;
-    margin: 20px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px black;
-}
-
-article p {
-    margin: 10px;
-    text-align: justify;
-}
-
-.foot-grid {
-    display: grid;
-    grid-template-columns: 50%;
-    padding: 10px;
-}
-
-footer ul li {
-    list-style-type: none
-}
-
-.contact {
-    grid-column: 1;
-    margin-left: 75px;
-}
-
-.social {
-    grid-column: 2;
-    margin-top: 20px;
-}
-
-.weather {
-    display: grid;
-    grid-template-columns: 33%;
-    text-align: center;
-}
-
-.today {
-    grid-column: 1/ span 3;
-    background-color: gray;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.forc-1 {
-    grid-column: 1;
-    grid-row: 2;
-    border: 1px solid black;
-    background-color: #ffe66d;
-    border-radius: 0px 0px 0px 20px;
-}
-
-.forc-2 {
-    grid-column: 2;
-    grid-row: 2;
-    border: 1px solid black;
-    background-color: #ffe66d;
-}
-
-.forc-3 {
-    grid-column: 3;
-    grid-row: 2;
-    border: 1px solid black;
-    background-color: #ffe66d;
-    border-radius: 0px 0px 20px 0px;
-}
-
-.join a {
-    background-color: crimson;
-    display: inline-block;
-    width: 100px;
-    padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    color: #F7FFF7;
-    text-decoration: none;
-}
-
-.join a:hover {
-    background-color: #6ca6c1;
-    border: 1px solid black;
-}
-
-.attribution {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.historical {
-    background-color: gray;
-    margin: 10px;
-    border-radius: 20px;
-    border: 2px black solid;
-    padding-top: 10px;
-}
-
-.demog {
-    background-color: gray;
-    margin: 10px;
-    border-radius: 20px;
-    border: 2px black solid;
-    padding-top: 10px;
-}
-
-.evts {
-    background-color: gray;
-    margin: 10px;
-    border-radius: 20px;
-    border: 2px black solid;
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: 50%;
-}
-
-.evts ul {
-    list-style-type: none;
-}
-
-.ammon-events {
-    grid-column: 1;
-    text-align: right;
-}
-
-.event-desc {
-    grid-column: 2;
-    text-align: left;
-}
-
-.demog p,
-.historical p {
-    margin: 20px;
-    text-align: justify;
-}
-
-.level {
-    grid-column: 1;
-    grid-row: 2;
-    text-align: right;
-}
-
-.f1 {
-    display: grid;
-    grid-template-columns: 50%;
-    background-color: gray;
-    border-radius: 20px;
-    border: 2px black solid;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-.f2 {
-    display: grid;
-    grid-template-columns: 50%;
-    background-color: gray;
-    border-radius: 20px;
-    border: 2px black solid;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-.f3 {
-    display: grid;
-    background-color: gray;
-    border-radius: 20px;
-    border: 2px black solid;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-.personal-label {
-    text-align: right;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.personal {
-    text-align: left;
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.company {
-    text-align: left;
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.company-label {
-    text-align: right;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.personal-label p,
-.company-label p {
-    margin-top: 19px;
-}
-
-input {
-    margin: 10px;
-}
-
-.submit {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.submit button {
-    width: 200px;
-    background-color: crimson;
-    color: #F7FFF7;
-    border-radius: 20px;
-    font-size: 25px;
-    margin-top: 45px;
-    margin-right: 110px;
-}
-
-.submit button:hover {
-    background-color: #6ca6c1;
-}
-
-.tiers {
-    grid-column: 1/ span 2;
-    grid-row: 1;
-    text-align: justify;
-    margin: auto;
-    margin-top: 10px;
-    background-color: #F7FFF7;
-    border-radius: 20px;
-    border: 1px solid black;
-}
-
-.commerce {
-    display: grid;
-    background-color: gray;
-    border-radius: 20px;
-    border: 2px black solid;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-.col-one {
-    grid-column: 1;
-}
-
-.col-two {
-    grid-column: 2;
-    grid-row: 1/span 2;
-    margin-bottom: 15px;
-}
-
-.col-three {
-    grid-row: 2;
-    grid-column: 1;
-    margin-bottom: 10px;
-}
-
-.contact-info {
-    display: grid;
-    margin-bottom: 15px;
-}
-
-.board {
-    background-color: gray;
-    border-radius: 20px;
-    border: 2px black solid;
-    margin: 10px;
-    grid-column: 2;
-    text-align: center;
-}
-
-.contact-us {
-    background-color: gray;
-    border-radius: 20px;
-    border: 2px black solid;
-    margin: 10px;
-    grid-column: 1;
-    text-align: justify;
-}
-
-.contact-us p,
-.contact-us h3 {
-    margin-left: 100px;
-}
-
-.board ul {
-    list-style-type: none;
-    margin-left: 50px;
-    text-align: justify;
-}
-
-.col-three button {
-    width: 200px;
-    background-color: crimson;
-    color: #F7FFF7;
-    border-radius: 20px;
-    font-size: 25px;
-    margin-top: 45px;
-}
-
-.col-three button:hover {
-    background-color: #6ca6c1;
-}
-
-.map {
-    background-color: gray;
-    border-radius: 20px;
-    border: 2px black solid;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-.map iframe {
-    margin-top: 20px;
-    margin-bottom: 20px;
+@media (max-width: 479px) {
+    body {
+        max-width: 300px;
+        padding: 0px;
+        margin: auto;
+        font-size: 13px;
+    }
+    .local {
+        display: inline;
+        padding-top: 10px;
+        margin: 10px;
+    }
+    .info {
+        display: inline;
+    }
+    header img {
+        width: 100px;
+    }
+    header h1 {
+        font-size: 15px;
+        margin-top: 30px;
+        margin-right: 10px;
+        word-wrap: break-word;
+    }
+    header {
+        grid-template-columns: 100px 200px;
+        max-height: 100px;
+    }
+    article img {
+        width: 150px;
+    }
+    .local img {
+        display: none;
+    }
+    .advr3 {
+        display: grid;
+        grid-row: 2;
+        grid-column: 1/ span 2;
+        border: 2px black solid;
+        background-color: gray;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .hero {
+        margin-bottom: 10px;
+    }
+    .social {
+        display: none;
+    }
+    footer {
+        font-size: 13px;
+    }
+    .contact {
+        width: 250px;
+    }
+    .nav li {
+        display: none;
+    }
+    .nav li:first-child {
+        display: block;
+    }
+    .nav ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    .responsive li {
+        display: block;
+    }
+    .show-nav {
+        width: 32px;
+    }
+    .advr1,
+    .advr2,
+    .advr3,
+    .events,
+    .weather {
+        margin: 10px;
+    }
+    .historical img,
+    .demog img {
+        width: 200px;
+    }
+    iframe {
+        width: 200px;
+        height: 150px;
+    }
+    .cham-contact {
+        display: block;
+    }
+    .commerce {
+        display: grid;
+        background-color: gray;
+        border-radius: 20px;
+        border: 2px black solid;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .col-one {
+        grid-column: 1;
+    }
+    .col-two {
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 15px;
+    }
+    .col-three {
+        grid-row: 3;
+        grid-column: 1;
+        margin-bottom: 10px;
+    }
+    .contact-us {
+        background-color: gray;
+        border-radius: 20px;
+        border: 2px black solid;
+        margin: 10px;
+        grid-column: 1;
+        text-align: justify;
+    }
+    .board {
+        background-color: gray;
+        border-radius: 20px;
+        border: 2px black solid;
+        margin: 10px;
+        grid-column: 1;
+        text-align: center;
+    }
+    .board ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+    .contact-us p,
+    .contact-us h3 {
+        text-align: left;
+        margin-left: 10px;
+        word-wrap: break-word;
+    }
+    .view {
+        display: none;
+    }
+    .direct:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .direct:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .direct:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .direct:nth-child(4) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .direct:nth-child(5) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .direct:nth-child(6) {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .direct:nth-child(7) {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    .direct {
+        background-color: gray;
+        margin: 10px;
+        box-shadow: 3px 3px 3px black;
+        border-radius: 20px;
+        width: 280px;
+    }
+    .personal-label,
+    .company-label {
+        display: none;
+    }
+    .f1,
+    .f2 {
+        text-align: center;
+        grid-template-columns: 50%;
+        background-color: gray;
+        border-radius: 20px;
+        border: 2px black solid;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .f3 {
+        display: grid;
+        background-color: gray;
+        border-radius: 20px;
+        border: 2px black solid;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .submit {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .submit button {
+        width: 200px;
+        background-color: crimson;
+        color: #F7FFF7;
+        border-radius: 20px;
+        font-size: 25px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    .tiers {
+        grid-column: 1/ span 2;
+        grid-row: 1;
+        text-align: justify;
+        margin: 10px;
+        margin-top: 10px;
+        background-color: #F7FFF7;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
 }

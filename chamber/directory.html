@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Home | Chamber of Commerce</title>
+    <title>Directory | Chamber of Commerce</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
@@ -15,20 +16,32 @@
      Brigham Young University Idaho">
 </head>
 
-<body>
+<body id="Directory" onload="lastModified(), show_active()">
     <header>
-        <img>
+        <img src="images/logo.png" alt="logo">
         <h1>City Of Ammon Chamber Of Commerce</h1>
     </header>
-    <nav>
+    <nav class="nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ammon.html">Ammon</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li>
+                <a onclick="showNav()"><img class="show-nav" src="images/list.png" alt="list"></a>
+            </li>
+            <li class="Home"><a href="index.html">Home</a></li>
+            <li class="Ammon"><a href="ammon.html">Ammon</a></li>
+            <li class="Contact"><a href="contact.html">Contact</a></li>
+            <li class="Directory"><a href="directory.html">Directory</a></li>
+            <li class="Join"><a href="join.html">Join</a></li>
         </ul>
     </nav>
+    <main>
+        <div class="layout">
+            <button class="view" onclick="listview()"><img src="images/list.png" alt="listview"></button>
+            <button class="view" onclick="gridview()"><img src="images/pixels.png" alt="gridview"></button>
+        </div>
+        <div class="contain">
+
+        </div>
+    </main>
     <footer>
         <div class="foot-grid">
             <div class="contact">
@@ -46,8 +59,11 @@
         </div>
         <div class="attribution">
             <p>Weather Info From:<a href="https://openweathermap.org/api">OpenWeatherApi</a></p>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
+    <script src="js/info.js"></script>
 </body>
 
 </html>

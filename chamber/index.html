@@ -3,9 +3,10 @@
 
 <head>
     <title>Home | Chamber of Commerce</title>
-    <link href="css/small.css" rel="stylesheet">
-    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -15,18 +16,21 @@
      Brigham Young University Idaho">
 </head>
 
-<body>
+<body id="Home" onload="lastModified(), show_active()">
     <header>
-        <img>
+        <img src="images/logo.png" alt="logo">
         <h1>City Of Ammon Chamber Of Commerce</h1>
     </header>
-    <nav>
+    <nav class="nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ammon.html">Ammon</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li>
+                <a onclick="showNav()"><img class="show-nav" src="images/list.png" alt="list"></a>
+            </li>
+            <li class="Home"><a href="index.html">Home</a></li>
+            <li class="Ammon"><a href="ammon.html">Ammon</a></li>
+            <li class="Contact"><a href="contact.html">Contact</a></li>
+            <li class="Directory"><a href="directory.html">Directory</a></li>
+            <li class="Join"><a href="join.html">Join</a></li>
         </ul>
     </nav>
     <main>
@@ -87,15 +91,12 @@
         </div>
         <article>
             <img src="images/park.jpeg" alt="park">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id metus lorem. In hac habitasse platea dictumst. Aliquam tortor turpis, tristique in lacus in, vulputate tincidunt enim. Nulla porta libero imperdiet feugiat facilisis. Mauris
-                scelerisque dui ut ultrices finibus. Cras at volutpat elit, ut vulputate nulla. Vestibulum ligula lacus, iaculis et porttitor non, pellentesque eget elit. Sed et dolor ut quam fermentum consectetur ut vitae orci. Integer bibendum nulla
-                elit, nec placerat leo pulvinar quis. Duis eu posuere arcu. Phasellus vitae porta lorem. Cras tempor ultrices ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris mollis, sapien
-                nec pharetra consequat, ipsum ipsum auctor felis, ac ultricies ipsum nisi ac magna. Curabitur vitae tellus ante. Maecenas sed velit vehicula, tincidunt nibh nec, convallis nisl. Donec eget felis quis leo lacinia lobortis. Mauris a neque
-                vestibulum, rutrum diam sed, vehicula purus. Sed auctor id enim non volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id metus lorem. In hac habitasse platea dictumst. Aliquam tortor turpis, tristique in lacus
-                in, vulputate tincidunt enim. Nulla porta libero imperdiet feugiat facilisis. Mauris scelerisque dui ut ultrices finibus. Cras at volutpat elit, ut vulputate nulla. Vestibulum ligula lacus, iaculis et porttitor non, pellentesque eget elit.
-                Sed et dolor ut quam fermentum consectetur ut vitae orci. Integer bibendum nulla elit, nec placerat leo pulvinar quis. Duis eu posuere arcu. Phasellus vitae porta lorem. Cras tempor ultrices ullamcorper. Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. Mauris mollis, sapien nec pharetra consequat, ipsum ipsum auctor felis, ac ultricies ipsum nisi ac magna. Curabitur vitae tellus ante. Maecenas sed velit vehicula, tincidunt nibh
-                nec, convallis nisl. Donec eget felis quis leo lacinia lobortis. Mauris a neque vestibulum, rutrum diam sed, vehicula purus. Sed auctor id enim non volutpat.</p>
+            <h3>Welcome!</h3>
+            <p>Welcome to the city of ammon chamber of commerce page! Thank you for taking the time to look us up and see what we have to offer! Our chamber was formed in early 2010 and we have been commited to the community of ammon ever since! We are here
+                to help any business in the community that wants to grow their network, or be recognized by the public. We have over 50 local businesses signed up already. Our goals are to enhance the community of our city with knowledge, and fun places
+                to go. We provide valuable knowledge to residents of the city, as well as for those who are coming from out of town. We want to make this community as great as it can possibly be. Join us today and you can also be apart of the journey
+                to grow this community! For more information, tak a look at one of our social media pages, <a href="https://twitter.com/DennysDiner?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>, or our <a href="https://www.facebook.com/dennys/">Facebook!</a>If
+                you can't find what your looking for there, feel free to eam us at Ammon.chamber@gmail.com, or call us at 543-335-7761!</p>
         </article>
     </main>
     <footer>
@@ -115,9 +116,11 @@
         </div>
         <div class="attribution">
             <p>Weather Info From:<a href="https://openweathermap.org/api">OpenWeatherApi</a></p>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
     </footer>
     <script src="js/weather.js"></script>
+    <script src="js/info.js"></script>
 </body>
 
 </html>

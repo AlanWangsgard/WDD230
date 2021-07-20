@@ -1,0 +1,52 @@
+{
+    "companies": [{
+            "name": "Orange leaf",
+            "logo": "orangeleaflogo.png",
+            "phone": "(208)-542-6964",
+            "address": "3340 S 25th E #205, Idaho Falls, ID 83404",
+            "weblink": "http://orangeleafyogurt.com/"
+        },
+        {
+            "name": "Phase 4 Stereo",
+            "logo": "phase4logo.png",
+            "phone": "(208)-523-1234",
+            "address": "3135 E 17th St C, Idaho Falls, ID 83406",
+            "weblink": "https://www.p4stereo.com/"
+        },
+        {
+            "name": "Dixie's Diner",
+            "logo": "dixiesdinerlogo.jpg",
+            "phone": "(208)-542-1950",
+            "address": "2150 Channing Way, Idaho Falls, ID 83404",
+            "weblink": "https://www.dixiesdiner.com/menu"
+        },
+        {
+            "name": "Al's Sporting Goods",
+            "logo": "alslogo.jpg",
+            "phone": "(435)-210-5356",
+            "address": "2395 E 17th St, Idaho Falls, ID 83401",
+            "weblink": "https://www.als.com/locations/idaho-falls"
+        },
+        {
+            "name": "Pawn 1",
+            "logo": "pawn1logo.png",
+            "phone": "(208)-522-6445",
+            "address": "3050 E 17th St, Ammon, ID 83406",
+            "weblink": "https://pawn1.com/location/21/ID/Idaho%20Falls"
+        },
+        {
+            "name": "Dump It",
+            "logo": "dumpitlogo.png",
+            "phone": "(208)-681-5020",
+            "address": "2310 N Deborah Dr, Idaho Falls, ID 83401",
+            "weblink": "https://www.dumpitjunk.com/schedule"
+        },
+        {
+            "name": "Mcdonalds",
+            "logo": "mcdonaldslogo.jpeg",
+            "phone": "(208)-542-6246",
+            "address": "1875 S 25th E, Ammon, ID 83406",
+            "weblink": "https://www.mcdonalds.com/us/en-us/full-menu.html?cid=RF:YXT_LS:SI::MGBM"
+        }
+    ]
+}

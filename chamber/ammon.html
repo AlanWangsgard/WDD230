@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Home | Chamber of Commerce</title>
+    <title>Ammon | Chamber of Commerce</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
@@ -15,18 +16,21 @@
      Brigham Young University Idaho">
 </head>
 
-<body>
+<body id="Ammon" onload="lastModified(), show_active()">
     <header>
-        <img>
+        <img src="images/logo.png" alt="logo">
         <h1>City Of Ammon Chamber Of Commerce</h1>
     </header>
-    <nav>
+    <nav class="nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ammon.html">Ammon</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li>
+                <a onclick="showNav()"><img class="show-nav" src="images/list.png" alt="list"></a>
+            </li>
+            <li class="Home"><a href="index.html">Home</a></li>
+            <li class="Ammon"><a href="ammon.html">Ammon</a></li>
+            <li class="Contact"><a href="contact.html">Contact</a></li>
+            <li class="Directory"><a href="directory.html">Directory</a></li>
+            <li class="Join"><a href="join.html">Join</a></li>
         </ul>
     </nav>
     <main>
@@ -44,15 +48,15 @@
         <div class="evts">
             <div class="ammon-events">
                 <ul>
-                    <li>Ammon Days</li>
-                    <li>Meet The Artist</li>
-                    <li>Recitation of the rosary</li>
-                    <li>Ammon Deseret Industries Donation Drop Off</li>
-                    <li>Alive After 5</li>
-                    <li>DJ For A Day Audition #2</li>
+                    <li>Ammon Days Sat, Aug 7, 9 AM</li>
+                    <li>Meet The Artist Sat, Jul 24, 4 – 7 PM</li>
+                    <li>Recitation of the rosary Tue, Jul 20, 7 – 9 PM</li>
+                    <li>Deseret Industries Donation Drop Off Tue, Jul 20, 1 – 2 PM</li>
+                    <li>Alive After 5 Wed, Jul 21, 5 – 8 PM</li>
+                    <li>DJ For A Day Audition #2 Fri, Jul 23, 3 – 5 PM</li>
                 </ul>
             </div>
-            <div class="event-desc">
+            <!-- <div class="event-desc">
                 <ul>
                     <li>Sat, Aug 7, 9 AM</li>
                     <li>Sat, Jul 24, 4 – 7 PM</li>
@@ -61,7 +65,7 @@
                     <li>Wed, Jul 21, 5 – 8 PM</li>
                     <li>Fri, Jul 23, 3 – 5 PM</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div class="demog">
             <img src="images/bridge.jpg" alt="bridge">
@@ -91,8 +95,10 @@
         </div>
         <div class="attribution">
             <p>Weather Info From:<a href="https://openweathermap.org/api">OpenWeatherApi</a></p>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
     </footer>
+    <script src="js/info.js"></script>
 </body>
 
 </html>

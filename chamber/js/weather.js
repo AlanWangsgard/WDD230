@@ -38,5 +38,21 @@ fetch(apiURL)
         let alerts = jsObject.alerts
         for (let alr in alerts) {
             console.log(alerts[alr].event, alerts[alr].description)
+            let body = document.querySelector("body")
+            let h3 = document.createElement("h3")
+            let button = document.createElement("button")
+            let div = document.createElement("div")
+            button.textContent = "❌"
+            button.setAttribute("onclick", "removealert()")
+            h3.textContent = alerts[alr].event
+            div.setAttribute("class", "alert")
+            div.appendChild(h3)
+            div.appendChild(button)
+            body.prepend(div)
         }
     });
+
+function removealert() {
+    let body = document.querySelector("body")
+    body.removeChild(body.childNodes[0])
+}
